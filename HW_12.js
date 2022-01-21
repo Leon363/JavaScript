@@ -1,6 +1,5 @@
 const arHW = [13, 28, 4, 15, 25, -10, 40, 17, 27]
-// arHW.sort((a,b) => a - b); // вариант записи  ----  => {return a - b}
-// console.log(`arHW is ${arHW.toString()}`);
+
 
 arHW.sort(function(a, b){
     if (a % 2 != 0 && b % 2 !=0){
@@ -32,5 +31,25 @@ function displayMatrixTransponation(matrix){
     }
 }
 
+
+
+
 displayMatrixTransponation(matrix1);
 console.log(" ");
+
+const matrixNew = [];
+function displayMatrixTransponationNew(matrix){
+    //let matrixNew = [];
+    for(let i = 0; i < matrix[0].length; i++){
+        matrixNew.push([])
+    };
+        for(let i = 0; i < matrix.length; i++){
+            for(let j = 0; j < matrix.length; j++){
+                 matrixNew[j].push(matrix[i][j]);
+        }
+    } 
+    console.log(matrixNew);
+}
+
+
+displayMatrixTransponationNew(matrix1);
