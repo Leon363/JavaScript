@@ -11,13 +11,12 @@ console.log('My for Each');
 
 function myForEach(array, callback) {
     for (let index = 0; index < array.length; index++) {
-        callback(array[index]);
-        
+        callback(array[index]);        
     }
 }
 
 function callback(element) {
-    console.log(element / -1) ;
+    console.log(element / -1) ; 
 }
 
 myForEach(array,callback);
@@ -36,4 +35,21 @@ function myMap(arr, callback){
     }
 }
 
+
 myMap(arr, callback);
+
+
+
+// function myForEachEch(array, callback) {
+//     for (let index = 0; index < array.length; index++) {
+//         function call(element) {
+//             console.log(element * 2);
+//         }      
+//     }
+// }
+
+// function callback(element) {
+//     console.log(element / -1) ; 
+// }
+
+// myForEach(array,callback);
