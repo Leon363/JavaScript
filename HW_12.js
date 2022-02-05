@@ -24,11 +24,14 @@ console.log(" ");
 
 function displayMatrixTransponation(matrix){
     for (let i=0; i < matrix.length; i++){
+        let ar = [];
         let row = ' ';
         for(let j = 0; j < matrix[i].length; j++){
             row = row + matrix[j][i] + '    '
         }
-        console.log(row);
+        ar = row;
+
+        console.log(ar);
     }
 }
 
