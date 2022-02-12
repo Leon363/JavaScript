@@ -1,0 +1,25 @@
+
+function getRandomNumber(min, max) {
+    let p = Math.floor(Math.random() * (max - min) + min)
+    if(min > max){
+        console.log(Math.floor(Math.random() * (min - max) + max))
+        return 0;
+    }
+    console.log(p)
+}
+getRandomNumber(1, 10)
+
+// function getRandomNumberQQ(min, max){(Math.floor(Math.random() * (max - min) + min) => Math.floor(Math.random() * (min - max) + max))} 
+
+function concatinate(prefix) {
+    const concatAPP = 'App - ';
+    const concatMassage = 'Test status: Done';
+    const concatMassage1 =  concatAPP.concat(concatMassage.toString());
+
+    console.log(concatMassage1);
+
+
+}
+concatinate()
+
+
